@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "workspaces": [
+    "todo",
+    "examples"
+  ],
+  "name": "digit21-js-tutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
