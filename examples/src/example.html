@@ -1,0 +1,82 @@
+<!-- HTML comments look dumb ! -->
+<!-- Honestly not that important to know these things. -->
+<!-- I just noticed VSCode gives great and concise descriptions when you hover over a tag, good! -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head contains tags that don't show up on the page -->
+    <head>
+        <!-- A bunch of weirdo meta properties, don't know, don't care 😎😎 -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Important properties! -->
+        <title>Title that is shown on the browser tab!!</title>
+
+        <!-- One can include javascript and CSS inside the HTML document, but that is bad practice! -->
+        <style>
+            body {
+                background-color: pink;
+            }
+        </style>
+
+        <script>
+            document.addEventListener('load', () => {
+                console.log("PLUPP PLUPP PLUPP PLUPP");
+            })
+        </script>
+
+        <!-- Usually you tend to link to CSS and javascript files instead -->
+        <link rel="stylesheet" type="text/css" href="example.css">
+        <script src="syntax.js"></script>
+    </head>
+
+    <!-- These things are visible in body. It is the root of the document. -->
+    <body>
+        <!-- Probably the most important tags are those related to typography -->
+
+        <!-- Headers one through five. -->
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
+        <h4>Header 4</h4>
+        <h5>Header 5</h5>
+
+        <!-- Paragraphs. -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi,
+            repellendus?
+        </p>
+
+        <!-- So called "divs" (dividers) are commonly used, they are essentially just containers -->
+        <div>
+            <h2>something else inside the div</h2>
+        </div>
+
+        <!-- There are also semantic elements. These function just as divs do, except they also convey meaning about the element used by screenreaders and alike. -->
+        <main>
+            <!-- Main content on the page -->
+
+            <!-- Sections -->
+            <section>
+                <h1>Section 1</h1>
+            </section>
+            <section>
+                <h1>Section 2</h1>
+            </section>
+            <section>
+                <h1>Section 3</h1>
+            </section>
+        </main>
+
+        <!-- Page navigation. -->
+        <nav></nav>
+
+        <!-- Content that is not essential. -->
+        <aside></aside>
+
+        <!-- The footer on the bottom the page. -->
+        <footer></footer>
+    </body>
+</html>

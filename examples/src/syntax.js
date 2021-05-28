@@ -157,5 +157,7 @@ async function sleep(time) {
    })
 }
 
-await sleep(100);
-console.log(" i sleep")
+(async () => {
+   await sleep(100);
+   console.log(" i sleep")
+})()
